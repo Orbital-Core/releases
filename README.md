@@ -2,16 +2,21 @@ This repo contains Orbital builds for download. You can find the builds in the r
 
 ## Steps to run a single node:
 
+First you need to run the CouchDB database which is required by orbital node:
+
 ```
 docker pull couchdb
 docker run -p 5984:5984 -d -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password couchdb
+```
 
-git clone https://github.com/Orbital-Core/orbital
+Then download the latest release from [here](https://github.com/Orbital-Core/releases/releases) based on your OS. Then `cd` inside the directory. After that run the below command to configure the node:
 
-cd orbital
-
+```
 cp -r tendermint_config_example tendermint_config
+```
 
-go build
+Finally run the node using the below command
+
+```
 ./orbital
 ```
