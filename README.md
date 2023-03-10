@@ -15,7 +15,7 @@ Then download the latest release from [here](https://github.com/Orbital-Core/rel
 wget https://github.com/Orbital-Core/releases/releases/download/v1.1.0/Linux.zip
 ```
 
-Unzip the folder and then `cd` inside the directory. 
+Unzip the folder and then `cd` inside the directory (if necessary). 
 
 After that run the below command to configure the node:
 
