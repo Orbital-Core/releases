@@ -9,7 +9,11 @@ docker pull couchdb
 docker run -p 5984:5984 -d -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password couchdb
 ```
 
-Then download the latest release from [here](https://github.com/Orbital-Core/releases/releases) based on your OS. Then `cd` inside the directory. After that run the below command to configure the node:
+Then download the latest release from [here](https://github.com/Orbital-Core/releases/releases) based on your OS or, for example, using this command in a CLI wget https://github.com/Orbital-Core/releases/archive/refs/tags/v1.1.0.zip
+
+Then `cd` inside the directory. 
+
+After that run the below command to configure the node:
 
 ```
 cp -r tendermint_config_example tendermint_config
